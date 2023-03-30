@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Welcome = () =>{
 
@@ -7,9 +7,9 @@ const Welcome = () =>{
         <div>
             <div> WELCOME TO TOP 3 REACTIONS</div>
             <div> by Samuel</div>
-            {/* <NavLink to="/token">
+            <Link to="/token">
                 Click Here for Greatness
-            </NavLink> */}
+            </Link>
             
             
             

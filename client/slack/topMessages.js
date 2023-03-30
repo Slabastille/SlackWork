@@ -5,7 +5,7 @@ async function topMessages (channel, token, cursor){
      let verifier = true
      let counter = 1;
      //this while loop gets the messages that have a reaction and store them in all messages
-     while (verifier === true && counter != 4){
+     while (verifier === true && counter != 2){
         //Initial api call to get 100 messaged
         //console.log(counter, 'coiUNNTERRR')
         let message = await retrieveChannels(channel, token, cursor)
@@ -35,16 +35,18 @@ async function topMessages (channel, token, cursor){
         console.log('aaaaa', aCount)
         console.log('bbbbb', bCount)
         if(aCount > bCount){
-            return a - b
+            console.log('a:',aCount,'b:',bCount)
+            return -1
         }
         else if(bCount > aCount){
-            return b - a
+            console.log('b:',bCount,'a:',aCount)
+            return 1
         }
      }
     // let finalMessages = allMessagesWithReactions.sort((a,b)=>{
     //     return b.reactions.length - a.reactions.length
     // }).slice(0,3)
-    let finalMessages = allMessagesWithReactions.sort(sortFunction).slice(0,3)
+    let finalMessages = await allMessagesWithReactions.sort(sortFunction).slice(0,3)
 
    return finalMessages
 }
