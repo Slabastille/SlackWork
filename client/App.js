@@ -1,10 +1,10 @@
 import React from 'react'
-import Welcome from './slack/Welcome'
+import Root from './routes/Root' 
 const App = () => {
   return (
     <div>
-     HELLO WORLD
-     <Welcome/>
+      SLACK APP
+     <Root/>
     </div>
   )
 }
