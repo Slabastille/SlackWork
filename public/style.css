@@ -1,5 +1,9 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Exo 2', sans-serif;
+  
+
+  background-size: cover;
+  color:black;
 }
 
 a {
@@ -18,4 +22,9 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.link{
+  text-decoration: underline;
+  color: aqua;
 }

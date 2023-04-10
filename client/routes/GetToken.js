@@ -29,7 +29,7 @@ function GetToken (){
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
-                <Link to={'/topThree'}> HERE</Link>
+                {/* <Link to={'/topThree'}> HERE</Link> */}
             </div>
         )
     }

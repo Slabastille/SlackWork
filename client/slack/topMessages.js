@@ -32,14 +32,14 @@ async function topMessages (channel, token, cursor){
         for(let i of b.reactions){
             bCount += i.count;
         }
-        console.log('aaaaa', aCount)
-        console.log('bbbbb', bCount)
+        //console.log('aaaaa', aCount)
+        //console.log('bbbbb', bCount)
         if(aCount > bCount){
-            console.log('a:',aCount,'b:',bCount)
+            //console.log('a:',aCount,'b:',bCount)
             return -1
         }
         else if(bCount > aCount){
-            console.log('b:',bCount,'a:',aCount)
+            //console.log('b:',bCount,'a:',aCount)
             return 1
         }
      }
